@@ -47,7 +47,9 @@ void QS::sortAll(){}
 * @return
 *		the index of the pivot (middle index); -1 if provided with invalid input
 */
-int QS::medianOfThree(int left, int right){}
+int QS::medianOfThree(int left, int right){
+    return 0;
+}
 
 /*
 * Partitions a subarray around a pivot value selected according to
@@ -72,7 +74,9 @@ int QS::medianOfThree(int left, int right){}
 *		the pivot's ending index after the partition completes; -1 if
 * 		provided with bad input
 */
-int QS::partition(int left, int right, int pivotIndex){}
+int QS::partition(int left, int right, int pivotIndex){
+    return 0;
+}
 
 /*
 * Produces a comma delimited string representation of the array. For example: if my array
@@ -92,18 +96,18 @@ string QS::getArray() const{
     }
     for (int i = 0; i < insert; i++){
         ss << *(arrayptr + i);
-        if (i == sizeArray){
-            return ss.str();
+        if (i != insert){
+            ss << ",";
         }
-        ss << ",";
     }
+    return ss.str();
 }
 
 /*
 * Returns the number of elements which have been added to the array.
 */
 int QS::getSize() const{
-    return insert - 1;
+    return insert;
 }
 
 /*

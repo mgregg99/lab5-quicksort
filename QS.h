@@ -18,8 +18,8 @@ int sizeArray;
 int insert = 0; 
 
 public:
-	QS() {}
-	~QS() {}
+	QS();
+	~QS();
 
 	/*
 	* sortAll()
