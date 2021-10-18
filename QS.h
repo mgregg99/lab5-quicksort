@@ -14,8 +14,8 @@ class QS : public QSInterface {
 private:
 
 int* arrayptr;
-
-
+int sizeArray;
+int insert = 0; 
 
 public:
 	QS() {}

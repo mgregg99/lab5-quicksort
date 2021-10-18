@@ -1,12 +1,15 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include "QS.h"
 using namespace std;
 
 
 
 
-QS::QS() {}
+QS::QS() {
+    QS::createArray(0);
+}
 QS::~QS() {}
 
 /*
@@ -82,12 +85,26 @@ int QS::partition(int left, int right, int pivotIndex){}
 * @return
 *		the string representation of the current array
 */
-string QS::getArray() const{}
+string QS::getArray() const{
+    stringstream ss;
+    if (insert == 0){
+        return "";
+    }
+    for (int i = 0; i < insert; i++){
+        ss << *(arrayptr + i);
+        if (i == sizeArray){
+            return ss.str();
+        }
+        ss << ",";
+    }
+}
 
 /*
 * Returns the number of elements which have been added to the array.
 */
-int QS::getSize() const{}
+int QS::getSize() const{
+    return insert - 1;
+}
 
 /*
 * Adds the given value to the end of the array starting at index 0.
@@ -99,7 +116,14 @@ int QS::getSize() const{}
 * If the array is filled, do nothing.
 * returns true if a value was added, false otherwise.
 */
-bool QS::addToArray(int value){}
+bool QS::addToArray(int value){
+    if (insert == sizeArray){
+        return false;
+    }
+    *(arrayptr + insert) = value;
+    insert++;
+    return true;
+}
 
 /*
 * Dynamically allocates an array with the given capacity.
@@ -111,9 +135,21 @@ bool QS::addToArray(int value){}
 * @return
 *		true if the array was created, false otherwise
 */
-bool QS::createArray(int capacity){}
+bool QS::createArray(int capacity){
+
+    if (capacity < 0){
+        return false;
+    }
+    int newArray[capacity];
+    arrayptr = newArray;
+    sizeArray = capacity;
+    insert = 0;
+    return true;
+}
 
 /*
 * Resets the array to an empty or NULL state.
 */
-void QS::clear(){}
+void QS::clear(){
+    QS::createArray(0);
+}

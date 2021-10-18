@@ -2,31 +2,41 @@
 using namespace std;
 
 int *ptr;
+int arraysize;
 
 void redo(){
-    int neww[9];
+    int neww[99];
+    arraysize = 99;
+
+
     ptr = neww;
 
 }
 
 int main(){
     int apple[9];
+    arraysize = 9;
 
     
 
-for(int i = 0; i < 9; i++){
-    apple[i] = i + 1;
-}
-ptr = apple;
+    for(int i = 0; i < arraysize -1; i++){
+        apple[i] = i + 1;
+    }
+    ptr = apple;
 
-for(int i = 0; i < 9; i++){
-    apple[i] = i + 1;
-    cout << *(ptr + i) << endl;
-}
+    for(int i = 0; i < arraysize -1; i++){
+        apple[i] = i + 1;
+        cout << *(ptr + i) << endl;
+    }
 
-redo();
+    redo();
 
 
 
-return 1;
+    for(int i = 0; i < arraysize -1; i++){
+        apple[i] = i + 1;
+        cout << *(ptr + i) << endl;
+    }
+
+    return 1;
 }
