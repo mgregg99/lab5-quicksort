@@ -3,13 +3,20 @@
 
 #include <iostream>
 #include <string>
+#include <array>
 #include "QSInterface.h"
 using namespace std;
 
 
 
-class QS : public QSInterface
-{
+class QS : public QSInterface {
+
+private:
+
+int* arrayptr;
+
+
+
 public:
 	QS() {}
 	~QS() {}
