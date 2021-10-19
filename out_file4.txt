@@ -25,14 +25,14 @@ addToArray 1 True
 addToArray 2 True
 addToArray 3 True
 getArray
- 1891702592,32676,1891702480,
+ 2071598848,32585,2071598736,
 medianOfThree 1 3 0
 getArray
- 1891702592,32676,1891702480,
+ 2071598848,32585,2071598736,
 partition -1 2 1 0
 partition 0 3 2 0
 partition 1 1 1 0
 medianOfThree 2 0 0
 partition 0 1 2 0
 getArray
- 1891702592,32676,1891702480,
+ 2071598848,32585,2071598736,

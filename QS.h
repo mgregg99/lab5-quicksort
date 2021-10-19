@@ -15,7 +15,7 @@ private:
 
 int* arrayptr;
 int sizeArray;
-int insert = 0; 
+int insert = 0;
 
 public:
 	QS();

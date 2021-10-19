@@ -5,7 +5,7 @@ addToArray 3 True
 addToArray 4 True
 addToArray 5 True
 getArray
- -428539904,21868,-1649258696,32767,1891702592,
+ -456654848,21908,-199807176,32764,2071598848,
 clear 
 getArray
  
@@ -19,15 +19,15 @@ getSize 1
 addToArray -4 True
 getSize 2
 getArray
- -428539904,21868,
+ -456654848,21908,
 addToArray -3 True
 addToArray -2 True
 getSize 4
 addToArray -1 True
 getSize 5
 getArray
- -428539904,21868,-1649258696,32767,1891702592,
+ -456654848,21908,-199807176,32764,2071598848,
 addToArray 6 False
 getSize 5
 getArray
- -428539904,21868,-1649258696,32767,1891702592,
+ -456654848,21908,-199807176,32764,2071598848,
