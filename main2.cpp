@@ -56,8 +56,9 @@ int main() {
     for (int i = 0; i < 5; ++i) {
 
         // store input number in arr[i]
-        cin >> 
-        *(arr + i) ;
+        int temp = 0;
+        cin >> temp;
+        *(arr + i) = temp;
 
     }
 

@@ -122,9 +122,13 @@ int QS::getSize() const{
 */
 bool QS::addToArray(int value){
     if (insert == sizeArray){
+        cout << "inser == size array" << endl;
         return false;
     }
+    cout << "value " << value << endl;
     *(arrayptr + insert) = value;
+
+    cout << "arrayptr " << *(arrayptr + insert) << endl;
     insert++;
     return true;
 }
