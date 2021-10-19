@@ -96,11 +96,12 @@ string QS::getArray() const{
     }
     for (int i = 0; i < insert; i++){
         ss << *(arrayptr + i);
-        if (i != insert){
+        if (i != insert - 1){
             ss << ",";
         }
     }
-    return ss.str();
+    string temp = ss.str();
+    return temp;
 }
 
 /*
@@ -122,13 +123,9 @@ int QS::getSize() const{
 */
 bool QS::addToArray(int value){
     if (insert == sizeArray){
-        cout << "inser == size array" << endl;
         return false;
     }
-    cout << "value " << value << endl;
     *(arrayptr + insert) = value;
-
-    cout << "arrayptr " << *(arrayptr + insert) << endl;
     insert++;
     return true;
 }
@@ -148,8 +145,8 @@ bool QS::createArray(int capacity){
     if (capacity < 0){
         return false;
     }
-    int newArray[capacity];
-    arrayptr = newArray;
+
+    arrayptr = new int[capacity];
     sizeArray = capacity;
     insert = 0;
     return true;
