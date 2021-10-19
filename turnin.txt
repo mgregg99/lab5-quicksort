@@ -5,7 +5,11 @@ addToArray 3 True
 addToArray 4 True
 addToArray 5 True
 getArray
+<<<<<<< HEAD
  1,2,3,4,5
+=======
+ -456654848,21908,-199807176,32764,2071598848,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 clear 
 getArray
  
@@ -19,18 +23,30 @@ getSize 1
 addToArray -4 True
 getSize 2
 getArray
+<<<<<<< HEAD
  -5,-4
+=======
+ -456654848,21908,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 addToArray -3 True
 addToArray -2 True
 getSize 4
 addToArray -1 True
 getSize 5
 getArray
+<<<<<<< HEAD
  -5,-4,-3,-2,-1
 addToArray 6 False
 getSize 5
 getArray
  -5,-4,-3,-2,-1
+=======
+ -456654848,21908,-199807176,32764,2071598848,
+addToArray 6 False
+getSize 5
+getArray
+ -456654848,21908,-199807176,32764,2071598848,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 5 True
 addToArray 10 True
 addToArray 5 True
@@ -38,6 +54,7 @@ addToArray 0 True
 addToArray -5 True
 addToArray -10 True
 getArray
+<<<<<<< HEAD
  10,5,0,-5,-10
 medianOfThree 0 4 0
 getArray
@@ -51,6 +68,21 @@ getArray
 medianOfThree 1 3 0
 getArray
  10,5,0,-5,-10
+=======
+ -456654848,21908,-199807176,32764,2071598848,
+medianOfThree 0 4 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,
+medianOfThree 0 0 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,
+medianOfThree 0 2 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,
+medianOfThree 1 3 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 10 True
 getArray
  
@@ -65,6 +97,7 @@ addToArray 3 True
 addToArray 2 True
 addToArray 1 True
 getArray
+<<<<<<< HEAD
  10,9,8,7,6,5,4,3,2,1
 medianOfThree 0 9 0
 getArray
@@ -81,12 +114,31 @@ getArray
 medianOfThree 6 8 0
 getArray
  10,9,8,7,6,5,4,3,2,1
+=======
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+medianOfThree 0 9 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+medianOfThree 0 2 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+medianOfThree 2 4 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+medianOfThree 4 6 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+medianOfThree 6 8 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 4 True
 addToArray 2 True
 addToArray 1 True
 addToArray 1 True
 addToArray 1 True
 getArray
+<<<<<<< HEAD
  2,1,1,1
 medianOfThree 1 3 0
 getArray
@@ -100,6 +152,21 @@ getArray
 medianOfThree 1 3 0
 getArray
  2,1,1,1
+=======
+ 2071598848,32585,2071598736,32585,
+medianOfThree 1 3 0
+getArray
+ 2071598848,32585,2071598736,32585,
+medianOfThree 0 2 0
+getArray 
+ 2071598848,32585,2071598736,32585,
+medianOfThree 0 3 0
+getArray
+ 2071598848,32585,2071598736,32585,
+medianOfThree 1 3 0
+getArray
+ 2071598848,32585,2071598736,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 10 True
 addToArray 10 True
 addToArray 9 True
@@ -112,6 +179,7 @@ addToArray 3 True
 addToArray 2 True
 addToArray 1 True
 getArray
+<<<<<<< HEAD
  10,9,8,7,6,5,4,3,2,1
 partition 0 9 9 0
 getArray
@@ -149,6 +217,45 @@ getArray
 partition 0 3 1 0
 getArray
  10,9,8,7,6,5,4,3,2,1
+=======
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 9 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 0 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 4 2 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 5 9 7 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 4 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 7 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 6 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 5 5 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 7 4 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 9 3 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 2 2 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+partition 0 3 1 0
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 6 True
 addToArray 2 True
 addToArray 2 True
@@ -157,6 +264,7 @@ addToArray 3 True
 addToArray 1 True
 addToArray 2 True
 getArray
+<<<<<<< HEAD
  2,2,2,3,1,2
 partition 0 2 1 0
 getArray
@@ -167,6 +275,18 @@ getArray
 partition 1 5 3 0
 getArray
  2,2,2,3,1,2
+=======
+ -456654848,21908,-199807176,32764,2071598848,32585,
+partition 0 2 1 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,32585,
+partition 0 4 4 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,32585,
+partition 1 5 3 0
+getArray
+ -456654848,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 10 True
 createArray 1000 True
 medianOfThree 0 5 0
@@ -194,17 +314,28 @@ addToArray 1 True
 addToArray 2 True
 addToArray 3 True
 getArray
+<<<<<<< HEAD
  1,2,3
 medianOfThree 1 3 0
 getArray
  1,2,3
+=======
+ 2071598848,32585,2071598736,
+medianOfThree 1 3 0
+getArray
+ 2071598848,32585,2071598736,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 partition -1 2 1 0
 partition 0 3 2 0
 partition 1 1 1 0
 medianOfThree 2 0 0
 partition 0 1 2 0
 getArray
+<<<<<<< HEAD
  1,2,3
+=======
+ 2071598848,32585,2071598736,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 20 True
 addToArray 9 True
 addToArray 8 True
@@ -217,10 +348,17 @@ addToArray 2 True
 addToArray 1 True
 addToArray 0 True
 getArray
+<<<<<<< HEAD
  9,8,7,6,5,4,3,2,1,0
 sortAll
 getArray
  9,8,7,6,5,4,3,2,1,0
+=======
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,
+sortAll
+getArray
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 20 True
 addToArray 9 True
 addToArray 8 True
@@ -243,10 +381,17 @@ addToArray 2 True
 addToArray 1 True
 addToArray 0 True
 getArray
+<<<<<<< HEAD
  9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0
 sortAll
 getArray
  9,8,7,6,5,4,3,2,1,0,9,8,7,6,5,4,3,2,1,0
+=======
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,2071598736,32585,
+sortAll
+getArray
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,2071598736,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 20 True
 addToArray 0 True
 addToArray 0 True
@@ -269,10 +414,17 @@ addToArray 0 True
 addToArray -1 True
 addToArray 0 True
 getArray
+<<<<<<< HEAD
  0,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,1,0,0,-1,0
 sortAll
 getArray
  0,0,0,0,0,-1,0,0,0,0,1,0,0,0,0,1,0,0,-1,0
+=======
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,2071598736,32585,
+sortAll
+getArray
+ 0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,2071598736,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 30 True
 addToArray 30 True
 addToArray 29 True
@@ -305,10 +457,17 @@ addToArray 3 True
 addToArray 2 True
 addToArray 1 True
 getArray
+<<<<<<< HEAD
  30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1
 sortAll
 getArray
  30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1
+=======
+ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+sortAll
+getArray
+ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,32764,-199807008,32764,2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 10 True
 addToArray 1  True
 addToArray 2 True
@@ -321,10 +480,17 @@ addToArray 7 True
 addToArray 8 True
 addToArray 9 True
 getArray
+<<<<<<< HEAD
  1,2,3,4,1,5,6,7,8,9
 sortAll
 getArray
  1,2,3,4,1,5,6,7,8,9
+=======
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+sortAll
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
 createArray 10 True
 addToArray 4 True
 addToArray 6 True
@@ -337,7 +503,14 @@ addToArray 8 True
 addToArray 7 True
 addToArray 9 True
 getArray
+<<<<<<< HEAD
  4,6,2,1,9,5,3,8,7,9
 sortAll
 getArray
  4,6,2,1,9,5,3,8,7,9
+=======
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+sortAll
+getArray
+ 2071600352,32585,0,0,-456654560,21908,-199807176,32764,2071598848,32585,
+>>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
