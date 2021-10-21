@@ -1,6 +1,6 @@
 createArray 10 True
 createArray 1000 True
-medianOfThree 0 5 0
+medianOfThree 0 5 -1
 partition 0 5 3 0
 getArray
  
@@ -9,41 +9,30 @@ addToArray 2 True
 addToArray 3 True
 addToArray 4 True
 addToArray 5 True
-medianOfThree 0 5 0
-medianOfThree -1 4 0
+medianOfThree 0 5 2
+medianOfThree -1 4 -1
 getArray
- 1,2,3,4,5
-medianOfThree 0 4 0
+ 0,2,1,4,5
+medianOfThree 0 4 2
 getArray
- 1,2,3,4,5
-medianOfThree 2 2 0
-medianOfThree 2 1 0
+ 0,2,1,4,5
+medianOfThree 2 2 -1
+medianOfThree 2 1 -1
 getArray
- 1,2,3,4,5
+ 0,2,1,4,5
 createArray 3 True
 addToArray 1 True
 addToArray 2 True
 addToArray 3 True
 getArray
-<<<<<<< HEAD
  1,2,3
-medianOfThree 1 3 0
+medianOfThree 1 3 2
 getArray
- 1,2,3
-=======
- 2071598848,32585,2071598736,
-medianOfThree 1 3 0
-getArray
- 2071598848,32585,2071598736,
->>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
+ 1,0,2
 partition -1 2 1 0
 partition 0 3 2 0
 partition 1 1 1 0
-medianOfThree 2 0 0
+medianOfThree 2 0 -1
 partition 0 1 2 0
 getArray
-<<<<<<< HEAD
- 1,2,3
-=======
- 2071598848,32585,2071598736,
->>>>>>> 1d52ebb6a61da6ccca29129de162396d4f537c7d
+ 1,0,2

@@ -48,12 +48,35 @@ void QS::sortAll(){}
 *		the index of the pivot (middle index); -1 if provided with invalid input
 */
 int QS::medianOfThree(int left, int right){
-    return 0;
-}
+    if (insert < 1 || left < 0 || right > insert || left > right || left == right){
+        return -1;
+    }
 
+    int middle = (left + right) / 2;
+    int placeholder;
+    bool made = true;
+
+    if (arrayptr[left] > arrayptr[middle]){
+        placeholder = arrayptr[middle];
+        arrayptr[middle] = arrayptr[left];
+        arrayptr[left] = placeholder;
+    }
+    if (arrayptr[middle] > arrayptr[right]){
+        placeholder = arrayptr[right];
+        arrayptr[right] = arrayptr[middle];
+        arrayptr[middle] = placeholder;
+    }
+    if (arrayptr[left] > arrayptr[middle]){
+        placeholder = arrayptr[middle];
+        arrayptr[middle] = arrayptr[left];
+        arrayptr[left] = placeholder;
+    }
+    return middle;
+    
+}
 /*
 * Partitions a subarray around a pivot value selected according to
-* median-of-three pivot selection.  Because there are multiple ways to partition a list,
+* median-of-three pivot selection. Because there are multiple ways to partition a list,
 * we will follow the algorithm on page 611 of the course text when testing this function.
 *
 * The values which are smaller than the pivot should be placed to the left
