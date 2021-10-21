@@ -77,7 +77,34 @@ int QS::partition(int left, int right, int pivotIndex){
         return -1;
     }
 
+    int placeholder;
+    placeholder = arrayptr[pivotIndex];
+    arrayptr[pivotIndex] = arrayptr[left];
+    arrayptr[left] = placeholder;
 
+    int up = left + 1;
+    int down = right;
+
+    do{
+        while((arrayptr[up] <= arrayptr[left]) && (up < right)){
+            up++;
+        }
+        while (arrayptr[down] > arrayptr[left] && down > left){
+            down--;
+        }
+        if (up < down){
+            placeholder = arrayptr[left];
+            arrayptr[up] = arrayptr[down];
+            arrayptr[down] = placeholder;
+        }
+        
+        
+    } while (up < down);
+    placeholder = arrayptr[left];
+    arrayptr[left] = arrayptr[down];
+    arrayptr[down] = placeholder;
+
+    return down;
 }
 
 string QS::getArray() const{
