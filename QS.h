@@ -31,6 +31,8 @@ public:
 	*/
 	void sortAll();
 
+  void quicksort(int first, int last);
+
 	/*
 	* medianOfThree()
 	*

@@ -20,10 +20,22 @@ QS::~QS() {}
 *
 * Does nothing if the array is empty.
 */
-void QS::sortAll(){}
+void QS::sortAll(){
+    QS::quicksort(0, insert - 1);
+}
+void QS::quicksort(int first, int last){
+    if(last - first < 1){
+        return;
+    }
+
+    int pivot = medianOfThree(first, last);
+    pivot = partition(first, last, pivot);
+    QS::quicksort(first, pivot - 1);
+    QS::quicksort(pivot + 1, last);
+}
 
 int QS::medianOfThree(int left, int right){
-    if (insert < 1 || left < 0 || right > insert || left > right || left == right){
+    if (insert < 1 || left < 0 || right < 0 || left > insert || right > insert || left > right || left == right || left > insert - 1 || right > insert - 1){
         return -1;
     }
 
@@ -73,7 +85,7 @@ int QS::medianOfThree(int left, int right){
 * 		provided with bad input
 */
 int QS::partition(int left, int right, int pivotIndex){
-    if(insert == 0 || left < 0 || right < 0 || left > insert || right > insert || left >= right){
+    if(insert < 1 || left < 0 || right < 0 || left > insert || right > insert || left > right || left == right || left > insert - 1 || right > insert - 1 || pivotIndex < left || pivotIndex > right){
         return -1;
     }
 
@@ -93,7 +105,7 @@ int QS::partition(int left, int right, int pivotIndex){
             down--;
         }
         if (up < down){
-            placeholder = arrayptr[left];
+            placeholder = arrayptr[up];
             arrayptr[up] = arrayptr[down];
             arrayptr[down] = placeholder;
         }
